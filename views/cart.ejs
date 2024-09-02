@@ -1,0 +1,465 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cart</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media.css">
+  <!-- font/bootstrap-icons.css -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <!-- font/bootstrap-icons.css -->
+  <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+    crossorigin="anonymous"></script>
+  <!-- bootstrap.min.css -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <!-- bootstrap.min.css -->
+
+  <!-- bootstrap.bundle.min.js -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+  <!-- bootstrap.bundle.min.js -->
+
+  <!-- google font -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+  <!-- google font -->
+
+  <!-- animate.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <!-- animate.css -->
+
+  <!-- <script src="js/js.js"></script> -->
+</head>
+
+<body>
+  <header>
+
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <span class="logo" id="ik">ik</span>
+          <span class="">Web Design</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item dropdown">
+              <a class="nav-link active" href="index" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Home
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="index">Homepage 1</a></li>
+                <li><a class="dropdown-item" href="index_1">Homepage 2</a></li>
+                <li><a class="dropdown-item" href="index_2">Homepage 3</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="shop">Shop</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="blog">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact">Contact</a>
+            </li>
+
+          </ul>
+
+          <form class="d-flex position-relative">
+            <i class="bi bi-search-heart"></i>
+            <button class="btn btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling"
+              aria-controls="offcanvasScrolling"><i class="bi bi-cart4">
+                <div class="position-absolute box">
+                  <p>0</p>
+                </div>
+              </i></button>
+            <i class="bi bi-heart">
+              <div class="position-absolute box">
+                <p>2</p>
+              </div>
+            </i>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+
+    <div class="offcanvas offcanvas-end" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
+      id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+      <div class="offcanvas-header">
+        <h3 class="offcanvas-title" id="offcanvasScrollingLabel">YOUR CART</h3>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+
+        <div id="ofsec">
+          <div id="ofpa">
+            <div id="ofch">
+              <div id="peta-a">
+                <img src="img/item-cart-01.jpg" alt="">
+              </div>
+              <div id="peta-b">
+                <p>White Shirt Pleat</p>
+                <p>1 x $19.0</p>
+                <span>Free Delivery in 2-3 days</span>
+              </div>
+            </div>
+            <div id="ofch">
+              <div id="peta-a"><img src="img/item-cart-02.jpg" alt=""></div>
+              <div id="peta-b">
+                <p>Nike Shoes</p>
+                <p>1 x $200.0</p>
+                <span>Free Delivery in 2-3 days</span>
+              </div>
+            </div>
+            <div id="ofch">
+              <div id="peta-a"><img src="img/item-cart-03.jpg" alt=""></div>
+              <div id="peta-b">
+                <p>Nixon Porter Leather</p>
+                <p>1 x $17.00</p>
+                <span>Free Delivery in 2-3 days</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="oftotle">
+          <div id="ofsub">
+            <p><span>Total:$508.0</span>
+              <span"></span>
+            </p>
+          </div>
+        </div>
+
+        <div id="ofbtn">
+          <div id="ofsubbtn">
+            <button class="btn">VIEW CART</button>
+            <button class="btn">CHECAK OUT</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasWithBackdrop"
+      aria-labelledby="offcanvasWithBackdropLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasWithBackdropLabel">Offcanvas with backdrop</h5>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+    </div>
+    <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
+      aria-labelledby="offcanvasWithBothOptionsLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Backdroped with scrolling</h5>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+    </div>
+
+  </header>
+  <section id="csec1">
+    <div id="cparent">
+      <div id="c-chl-1">
+        <div id="c-chl-1p1">
+          <div id="c-chl-1p1a">
+            <p>PRODUCT </p>
+          </div>
+          <div id="c-chl-1p1b">
+            <p>PRICE</p>
+          </div>
+          <div id="c-chl-1p1c">
+            <p>QUANTITY</p>
+          </div>
+          <div id="c-chl-1p1d">
+            <p>TOTAL</p>
+          </div>
+        </div>
+        <div id="c-chl-1p2">
+          <div id="c-chl-1p1a">
+            <div id="c-chl-1p1aA"><img src="img/product-15.jpg" alt=""></div>
+            <div id="c-chl-1p1aB">
+              <p>Rolex Slime</p><span>Free Delivery in 2-3 days</span>
+            </div>
+          </div>
+          <div id="c-chl-1p1b">
+            <p><span>$</span><span id="p1"></span></p>
+          </div>
+          <div id="c-chl-1p1c">
+            <div id="plusboxs" onclick="sub('plusbox1')">-</div>
+            <div id="plusbox1">0</div>
+            <div id="plusbox" onclick="add_1('plusbox1')">+</div>
+          </div>
+          <div id="c-chl-1p1d"><span>$</span><span id="qp1">00</span></div>
+        </div>
+        <div id="c-chl-1p3">
+          <div id="c-chl-1p1a">
+            <div id="c-chl-1p1aA"><img src="img/item-cart-02.jpg" alt=""></div>
+            <div id="c-chl-1p1aB">
+              <p>Nike Aire Shoes</p><span>Free Delivery in 2-3 days</span>
+            </div>
+          </div>
+          <div id="c-chl-1p1b">
+            <p><span>$</span><span id="p2"></span></p>
+          </div>
+          <div id="c-chl-1p1c">
+            <div id="plusboxs" onclick="sub('plusbox2')">-</div>
+            <div id="plusbox2">0</div>
+            <div id="plusbox" onclick="add_1('plusbox2')">+</div>
+          </div>
+          <div id="c-chl-1p1d"><span>$</span><span id="qp2">00</span></div>
+        </div>
+        <div id="c-chl-1p4">
+          <div id="c-chl-1p1a">
+            <div id="c-chl-1p1aA"><img src="img/item-cart-03.jpg" alt=""></div>
+            <div id="c-chl-1p1aB">
+              <p>Patek Philippe</p><span>Free Delivery in 2-3 days</span>
+            </div>
+          </div>
+          <div id="c-chl-1p1b">
+            <p><span>$</span><span id="p3"></span></p>
+          </div>
+          <div id="c-chl-1p1c">
+            <div id="plusboxs" onclick="sub('plusbox3')">-</div>
+            <div id="plusbox3">0</div>
+            <div id="plusbox" onclick="add_1('plusbox3')">+</div>
+          </div>
+          <div id="c-chl-1p1d"><span>$</span><span id="qp3">00</span></div>
+        </div>
+        <div id="c-chl-1p5">
+          <div id="c-chl-1p11b"><button>Coupon Code</button></div>
+          <div id="c-chl-1p11"><button>APPLY COUPON</button></div>
+          <div id="c-chl-1p11"><button>UPDATE CART</button></div>
+        </div>
+      </div>
+      <div id="c-chl-2">
+        <div id="c-chl-2p">
+          <div id="c-chl-2p2">
+            <h2>CART TOTALS</h2>
+            <span>Subtotal: $79.65</span>
+            <div id="c-chl-2a">
+              <div id="c-chl-2a1">
+                <p>Shipping:</p>
+              </div>
+              <div id="c-chl-2a2">
+                <p>There are no shipping methods available. Please double check your address, or contact us if Please
+                  double check your address, or contact us if you need any help.</p>
+                <p>CALCULATE SHIPPING</p>
+                <select name="" id="">
+                  <optgroup label="Select Account">
+                    <option value="">Select Account</option>
+                    <option value="">SBI</option>
+                    <option value="">BOB</option>
+                  </optgroup>
+                </select>
+                <input type="text" placeholder="State / Country">
+                <input type="text" placeholder="Postcode / Zip" class="mb-4">
+                <!-- <button id="btn-update" href="bill.html">janerate bill</button><br> -->
+
+                <!-- totle_p -->
+                <h1><span>Total : $</span> <span id="totle_p"></span></h1>
+                <!-- totle_p -->
+                <div id="subbtn"><button>PROCEED TO CHECKOUT</button></div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <footer>
+    <div id="foot">
+      <div id="foot1" class="row">
+        <div id="foot1a" class="col-sm-12 col-md-6 col-lg-3">
+          <h2>CATEGORIES</h2>
+          <a href="">Women</a>
+          <a href="">Men</a>
+          <a href="">Shoes</a>
+          <a href="">Watches</a>
+        </div>
+        <div id="foot1a" class="col-sm-12 col-md-6 col-lg-3">
+          <h2>HELP</h2>
+          <a href="">Track Order</a>
+          <a href="">Returns</a>
+          <a href="">Shipping</a>
+          <a href="">FAQs</a>
+        </div>
+        <div id="foot1a" class="col-sm-12 col-md-6 col-lg-3">
+          <h2>GET IN TOUCH</h2>
+          <p>Any questions? Let us know in store at 8th floor, 379 Hudson St, New York, NY 10018 or call us on (+1) 96
+            716 6879</p>
+          <i class="bi bi-instagram"></i>
+          <i class="bi bi-facebook"></i>
+          <i class="bi bi-twitter"></i>
+        </div>
+        <div id="foot1a" class="col-sm-12 col-md-6 col-lg-3">
+          <h2>NEWSLETTER</h2>
+          <input type="text" placeholder="email@example.com">
+          <button>SUBSCRIBE</button>
+        </div>
+      </div>
+      <div id="foot2">
+        <div id="footimg">
+          <center>
+            <img src="img/icon-pay-01.png" alt="">
+            <img src="img/icon-pay-02.png" alt="">
+            <img src="img/icon-pay-03.png" alt="">
+            <img src="img/icon-pay-04.png" alt="">
+            <img src="img/icon-pay-05.png" alt="">
+          </center>
+        </div>
+        <div id="copyright">
+          <center>
+            <p class="fs-5 pt-4 text-light">Copyright ©2023 All rights reserved | This template is made with by <span
+                class="text-info"><i class="bi bi-heart text-info"></i>Ishvar Kanzariya</span></p>
+          </center>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+
+</body>
+<script>
+  var count_1 = 0;
+  var count_2 = 0;
+  var count_3 = 0;
+
+  var price1 = 28;
+  var price2 = 24;
+  var price3 = 40;
+
+
+  document.getElementById('p1').innerHTML = price1;
+  document.getElementById('p2').innerHTML = price2;
+  document.getElementById('p3').innerHTML = price3;
+
+  var qp1 = 0;
+  var qp2 = 0;
+  var qp3 = 0;
+
+  document.getElementById('qp1').innerHTML = qp1;
+  document.getElementById('qp2').innerHTML = qp2;
+  document.getElementById('qp3').innerHTML = qp3;
+
+
+  // ----------------------------------------------------------------
+  function add_1(a) {
+    if (a == 'plusbox1') {
+      if (count_1 < 10) {
+
+        count_1++;
+      }
+      document.getElementById(a).innerHTML = count_1;
+      qp1 = cal(count_1, price1);
+      document.getElementById('qp1').innerHTML = qp1;
+
+      Total();
+    }
+    else if (a == 'plusbox2') {
+      if (count_2 < 10) {
+
+        count_2++;
+      }
+      document.getElementById(a).innerHTML = count_2;
+      qp2 = cal(count_2, price2);
+      document.getElementById('qp2').innerHTML = qp2;
+      Total();
+    }
+    else if (a == 'plusbox3') {
+      if (count_3 < 10) {
+
+        count_3++;
+      }
+      document.getElementById(a).innerHTML = count_3;
+      qp3 = cal(count_3, price3);
+      document.getElementById('qp3').innerHTML = qp3;
+
+      Total();;
+
+    }
+  }
+
+  // ----------------------------------------------------------------
+
+
+  function sub(a) {
+
+    if (a == 'plusbox1') {
+      if (count_1 > 0) {
+
+        count_1--;
+      }
+      document.getElementById(a).innerHTML = count_1;
+      qp1 = cal(count_1, price1);
+      document.getElementById('qp1').innerHTML = qp1;
+      Total();
+    }
+    else if (a == 'plusbox2') {
+      if (count_2 > 0) {
+
+        count_2--;
+      }
+      document.getElementById(a).innerHTML = count_2;
+      qp2 = cal(count_2, price2);
+      document.getElementById('qp2').innerHTML = qp2;
+      Total();
+    }
+    else if (a == 'plusbox3') {
+      if (count_3 > 0) {
+
+        count_3--;
+      }
+      document.getElementById(a).innerHTML = count_3;
+      qp3 = cal(count_3, price3);
+      document.getElementById('qp3').innerHTML = qp3;
+      Total();
+    }
+  }
+
+
+  // ----------------------------------------------------------------
+
+
+  function cal(q, p) {
+    return q * p;
+  }
+
+  // ----------------------------------------------------------------
+
+  var total_price_1 = 0;
+  document.getElementById('totle_p').innerHTML = total_price_1;
+
+  // ----------------------------------------------------------------
+
+
+  function totalp(qprice) {
+    ans = ans + qprice;
+    document.getElementById('totle_p').innerHTML = ans;
+  }
+
+  function Total() {
+    var total_price = qp1 + qp2 + qp3;
+    document.getElementById('totle_p').innerHTML = total_price;
+  }
+
+</script>
+
+</html>

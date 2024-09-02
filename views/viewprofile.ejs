@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Add Product</title>
+    <link rel="shortcut icon" type="image/png" href="../assets/images/logos/favicon.png" />
+    <link rel="stylesheet" href="../assets/css/styles.min.css" />
+    <style>
+        #img{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #img img{
+            border-radius:50px;
+        }
+        .card-body p{
+            border: 1px solid blue;
+            padding: 8px;
+            border-radius: 10px;
+            width: 300px;
+        }
+        .edit{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .card-body a{
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <!--  Body Wrapper -->
+    <div class="page-wrapper" id="main-wrapper" data-layout="vertical" data-navbarbg="skin6" data-sidebartype="full"
+        data-sidebar-position="fixed" data-header-position="fixed">
+        <!-- Sidebar Start -->
+        <aside class="left-sidebar">
+            <!-- Sidebar scroll-->
+            <div>
+                <div class="brand-logo d-flex align-items-center justify-content-between">
+                    <a href="./index.html" class="text-nowrap logo-img">
+                        <img src="../assets/images/logos/dark-logo.svg" width="180" alt="" />
+                    </a>
+                    <div class="close-btn d-xl-none d-block sidebartoggler cursor-pointer" id="sidebarCollapse">
+                        <i class="ti ti-x fs-8"></i>
+                    </div>
+                </div>
+                <!-- Sidebar navigation-->
+                <nav class="sidebar-nav scroll-sidebar" data-simplebar="">
+                    <ul id="sidebarnav">
+                        <li class="nav-small-cap">
+                            <i class="ti ti-dots nav-small-cap-icon fs-4"></i>
+                            <a href="userindex">GO TO WEBSITE</a>
+                        </li>
+                </nav>
+            </div>
+        </aside>
+        <div class="body-wrapper">
+
+
+            <div class="container-fluid">
+                <div class="container-fluid">
+
+
+                    <div class="card">
+                        <div class="card-body">
+                            <%data.map((val)=>{%>
+                            <h5 class="card-title fw-semibold mb-4">Profile Page ...</h5>
+                            <div class="card w-50">
+
+                                    <div class="card-body d-flex">
+                                        
+                                        <div id="img" class="w-25 h-100"><img src="<%=val.image%>" alt="" height="100px" width="100px"></div>
+                                        <div id="name" class="w-75 h-100 mt-4 ms-4"><%=val.username%></div>
+
+                                        
+                                        
+                                    </div>
+                            </div>
+
+                            <div class="d-flex">
+                                <div class="card w-50 ">
+                                    <div class="card-body">
+                                        <label for="">Full Name *</label>
+                                        <p><%=val.username%></p>
+                                    </div>
+                                </div>
+                                <div class="card w-50 ms-2">
+                                    <div class="card-body">
+                                        <label for="">Email Address *</label>
+                                        <p><%=val.email%></p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="d-flex">
+                                <div class="card w-50 ">
+                                    <div class="card-body">
+                                        <label for="">Coutry *</label>
+                                        <p><%=val.country%></p>
+                                    </div>
+                                </div>
+                                <div class="card w-50 ms-2">
+                                    <div class="card-body">
+                                        <label for="">State *</label>
+                                        <p><%=val.state%></p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="d-flex">
+                                <div class="card w-50 ">
+                                    <div class="card-body">
+                                        <label for="">City *</label>
+                                        <p><%=val.city%></p>
+                                    </div>
+                                </div>
+                                <div class="card w-50 ms-2">
+                                    <div class="card-body">
+                                        <label for="">ZIP CODE *</label>
+                                        <p><%=val.code%></p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card w-50 ms-2">
+                                <div class="card-body"> <a href="/editprofile?id=<%=val.id%>" class="bg-info text-light form-control d-flex ">Update Your Profile</a>
+                                </div>
+                            </div>
+                            <%})%>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../assets/libs/jquery/dist/jquery.min.js"></script>
+    <script src="../assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/sidebarmenu.js"></script>
+    <script src="../assets/js/app.min.js"></script>
+    <script src="../assets/libs/simplebar/dist/simplebar.js"></script>
+</body>
+
+</html>

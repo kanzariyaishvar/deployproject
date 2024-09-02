@@ -1,0 +1,337 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Blog</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+
+    <!-- font/bootstrap-icons.css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <!-- font/bootstrap-icons.css -->
+
+    <!-- bootstrap.min.css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <!-- bootstrap.min.css -->
+
+    <!-- bootstrap.bundle.min.js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <!-- bootstrap.bundle.min.js -->
+
+    <!-- google font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <!-- google font -->
+
+    <!-- animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- animate.css -->
+</head>
+
+<body>
+    <header>
+
+        <nav class="navbar navbar-expand-lg ">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <span class="logo" id="ik">ik</span>
+                    <span class="">Web Design</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Home
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="userindex">Homepage 1</a></li>
+                                <li><a class="dropdown-item" href="#">Homepage 2</a></li>
+                                <li><a class="dropdown-item" href="#">Homepage 3</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="usershop">Shop</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="userblog">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="userAbout">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="userContact">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="usercart">Cart</a>
+                        </li>
+                    </ul>
+
+                    <form class="d-flex position-relative">
+                        <i class="bi bi-search-heart lh-lg"></i>
+                        <button class="btn btn" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling"><i
+                                class="bi bi-cart4 ">
+                                <div class="position-absolute box">
+                                    <p>0</p>
+                                </div>
+                            </i></button>
+                        <i class="bi bi-heart lh-lg">
+                            <div class="position-absolute box">
+                                <p>2</p>
+                            </div>
+                        </i>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="offcanvas offcanvas-end" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
+        id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+        <div class="offcanvas-header">
+            <h3 class="offcanvas-title" id="offcanvasScrollingLabel">YOUR CART</h3>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+
+            <div id="ofsec">
+                <div id="ofpa">
+                    <div id="ofch">
+                        <div id="peta-a"><img src="img/item-cart-01.jpg" alt=""></div>
+                        <div id="peta-b">
+                            <p>White Shirt Pleat</p>
+                            <p>1 x $19.0</p>
+                            <span>Free Delivery in 2-3 days</span>
+                        </div>
+                    </div>
+                    <div id="ofch">
+                        <div id="peta-a"><img src="img/item-cart-02.jpg" alt=""></div>
+                        <div id="peta-b">
+                            <p>Nike Shoes</p>
+                            <p>1 x $200.0</p>
+                            <span>Free Delivery in 2-3 days</span>
+                        </div>
+                    </div>
+                    <div id="ofch">
+                        <div id="peta-a"><img src="img/item-cart-03.jpg" alt=""></div>
+                        <div id="peta-b">
+                            <p>Nixon Porter Leather</p>
+                            <p>1 x $17.00</p>
+                            <span>Free Delivery in 2-3 days</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="oftotle">
+                <div id="ofsub">
+                    <p>Total: $236.00</p>
+                </div>
+            </div>
+
+            <div id="ofbtn">
+                <div id="ofsubbtn">
+                    <a href="cart.html" class="btn">VEIW CART</a>
+                    <button class="btn">CHECAK OUT</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasWithBackdrop"
+        aria-labelledby="offcanvasWithBackdropLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasWithBackdropLabel">Offcanvas with backdrop</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+    </div>
+    <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
+        aria-labelledby="offcanvasWithBothOptionsLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Backdroped with scrolling</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+    </div>
+
+    <section id="B-section-1" style="background-image: url(img/bg-02.jpg);">
+        <div id="B-parent-1">
+            <div class="B-child-1">
+                <h1>Blog</h1>
+            </div>
+        </div>
+    </section>
+
+    <section id="B-section-2">
+        <div id="B-parent-2">
+            <div id="B-child-2a">
+                <div id="B-child-2a-1">
+                    <div id="hover"><img src="img/blog-04.jpg" alt=""></div>
+                </div>
+                <div id="B-child-2a-2">
+                    <h1>5 Winter-to-Spring Fashion Trends to Try Now</h1>
+                    <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce
+                        eget dictum tortor. Donec dictum vitae sapien eu varius </p>
+                    <p>By Admin | StreetStyle, Fashion, Couple | 8 Comments <a href="">CONTINUE READING </a><i
+                            class="bi bi-arrow-right-short fs-4"></i></p>
+                </div>
+                <div id="B-child-2a-1">
+                    <div id="hover"><img src="img/blog-05.jpg" alt=""></div>
+                </div>
+                <div id="B-child-2a-2">
+                    <h1>5 Winter-to-Spring Fashion Trends to Try Now</h1>
+                    <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce
+                        eget dictum tortor. Donec dictum vitae sapien eu varius </p>
+                    <p>By Admin | StreetStyle, Fashion, Couple | 8 Comments <a href="">CONTINUE READING </a><i
+                            class="bi bi-arrow-right-short fs-4"></i></p>
+                </div>
+                <div id="B-child-2a-1">
+                    <div id="hover"><img src="img/blog-06.jpg" alt=""></div>
+                </div>
+                <div id="B-child-2a-2">
+                    <h1>5 Winter-to-Spring Fashion Trends to Try Now</h1>
+                    <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce
+                        eget dictum tortor. Donec dictum vitae sapien eu varius </p>
+                    <p>By Admin | StreetStyle, Fashion, Couple | 8 Comments <a href="">CONTINUE READING </a><i class="bi bi-arrow-right-short fs-4"></i></p>
+                </div>
+
+                <a href="" class="fs-5 text-light text-bg-secondary" id="blog-btn">1</a><a href="" class="fs-5" id="blog-btn">2</a>
+            </div>
+            <div id="B-child-2b">
+                <div id="input">
+                    <input type="text" placeholder="Search" class="form-control"><i class="bi bi-search"></i>
+                </div>
+                <div>
+                    <h2 class="mt-5 mb-3 ms-4">Categories</h2>
+                    <ul>
+                        <li><a href="">Fashion</a></li>
+                        <li><a href="">Beauty</a></li>
+                        <li><a href="">Street Style</a></li>
+                        <li><a href="">Life Style</a></li>
+                        <li id="border"><a href="">DIY & Crafts</a></li>
+                    </ul>
+                    <h2 class="mt-5 ms-4">Featured Products</h2>
+                </div>
+                <div id="B-ofpa">
+                    <div id="B-ofch">
+                      <div id="B-peta-a"><img src="img/product-min-01.jpg" alt=""></div>
+                      <div id="B-peta-b">
+                        <p>White Shirt With Pleat Detail Back</p>
+                        <p class="fs-6">$19.00</p>
+                      </div>
+                    </div>
+                    <div id="B-ofch">
+                      <div id="B-peta-a"><img src="img/product-min-02.jpg" alt=""></div>
+                      <div id="B-peta-b">
+                        <p>White Shirt With Pleat Detail Back</p>
+                        <p class="fs-6">$21.0</p>
+                      </div>
+                    </div>
+                    <div id="B-ofch">
+                      <div id="B-peta-a"><img src="img/product-min-03.jpg" alt=""></div>
+                      <div id="B-peta-b">
+                        <p>White Shirt With Pleat Detail Back</p>
+                        <p class="fs-6">$20.00</p>
+                      </div>
+                    </div>
+                  </div>
+                  <h2 class="mt-5 ms-4">Archive</h2>
+                  <div id="b-child-3">
+                    <div id="b-child-3a">
+                        <p>July 2018</p>
+                        <p>June 2018</p>
+                        <p>May 2018</p>
+                        <p>April 2018</p>
+                        <p>March 2018</p>
+                        <p>February 2018</p>
+                        <p>January 2018</p>
+                        <p>December 2018</p>
+                    </div>
+                    <div id="b-child-3b">
+                        <p>(9)</p>
+                        <p>(39)</p>
+                        <p>(29)</p>
+                        <p>(35)</p>
+                        <p>(12)</p>
+                        <p>(21)</p>
+                        <p>(65)</p>
+                        <p>(89)</p>
+                    </div>
+                </div>
+                <h2 class="mt-1 ms-4">Tags</h2>
+                  <div id="ancor">
+                    <a href="">Fashion</a>
+                    <a href="">Lifestyle</a>
+                    <a href="">Denim</a>
+                    <a href="">Streetstyle</a>
+                    <a href="">Crafts</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <div id="foot">
+            <div id="foot1" class="row">
+                <div id="foot1a" class="col-sm-12 col-md-6 col-lg-3">
+                    <h2>CATEGORIES</h2>
+                    <a href="">Women</a>
+                    <a href="">Men</a>
+                    <a href="">Shoes</a>
+                    <a href="">Watches</a>
+                </div>
+                <div id="foot1a" class="col-sm-12 col-md-6 col-lg-3">
+                    <h2>HELP</h2>
+                    <a href="">Track Order</a>
+                    <a href="">Returns</a>
+                    <a href="">Shipping</a>
+                    <a href="">FAQs</a>
+                </div>
+                <div id="foot1a" class="col-sm-12 col-md-6 col-lg-3">
+                    <h2>GET IN TOUCH</h2>
+                    <p>Any questions? Let us know in store at 8th floor, 379 Hudson St, New York, NY 10018 or call us on
+                        (+1) 96 716 6879</p>
+                    <i class="bi bi-instagram"></i>
+                    <i class="bi bi-facebook"></i>
+                    <i class="bi bi-twitter"></i>
+                </div>
+                <div id="foot1a" class="col-sm-12 col-md-6 col-lg-3">
+                    <h2>NEWSLETTER</h2>
+                    <input type="text" placeholder="email@example.com">
+                    <button>SUBSCRIBE</button>
+                    <a href="about.html">next</a>
+                </div>
+            </div>
+            <div id="foot2">
+                <div id="footimg">
+                    <center>
+                        <img src="img/icon-pay-01.png" alt="">
+                        <img src="img/icon-pay-02.png" alt="">
+                        <img src="img/icon-pay-03.png" alt="">
+                        <img src="img/icon-pay-04.png" alt="">
+                        <img src="img/icon-pay-05.png" alt="">
+                    </center>
+                </div>
+                <div id="copyright">
+                    <center>
+                        <p class="fs-5 pt-4 text-light">Copyright ©2023 All rights reserved | This template is made with by <span class="text-info"><i class="bi bi-heart text-info"></i>Ishvar Kanzariya</span></p>
+                    </center>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+</body>
+
+</html>

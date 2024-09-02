@@ -1,0 +1,396 @@
+@media (min-width:768px) and (max-width:992px) {
+    #navbarSupportedContent{
+        margin-left: 480px;
+        margin-top: 50px;
+    }
+    .navbar-nav{
+        text-align: center;
+        padding-right: 10px;
+        width: 200px;
+        
+    }
+    form i{
+        display: none;
+    }
+    #csec1{
+        height: auto;
+    }
+    #cparent{
+        height: auto;
+        flex-direction: column;
+    }
+    
+    #c-chl-1{
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    #c-chl-2{
+        border: 1px solid black;
+        width: 100%;
+        height: auto;
+    }
+    #c-chl-2a{
+        height: auto;
+        padding: 5px;
+    }
+    nav ul{
+        background-color: black;
+        border-radius: 20px;
+    }
+    footer{
+        height: auto;
+     }
+     #foot{
+         height: auto;
+     }
+     #section-2{
+        height: auto;
+    }
+    #parent-2{
+        height: auto;
+    }
+    #child-2a{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    #section-4{
+        height: auto;
+    }
+    #parent-4{
+        height: auto;
+    }
+    #child-4{
+        height: auto;
+    }
+    #B-section-2{
+        height: auto;
+    }
+    #B-parent-2{
+        flex-direction: column;
+        height: auto;
+    }
+    #B-child-2a{
+        width: 100%;
+        height: auto;
+    }
+    #B-child-2a-2{
+        height: auto;
+    }
+    #B-child-2b{
+        width: 100%;
+        height: auto;
+    }
+    #B-peta-a img{
+        height: 100px;
+        width: 100px;
+    }
+    #A-section-2{
+        height: auto;
+    }
+    #A-parent-2{
+        height: auto;
+        flex-direction: column;
+    }
+    #A-child-2a{
+        width: 100%;
+    }
+    #A-child-2b{
+        width: 93.2%;
+    }
+    #A-child-2bp img{
+        height: 100%;
+        width: 101.3%;
+        margin-top: 0.7%;
+    }
+    #C-section-1{
+        height: auto;
+    }
+    #C-parent-1{
+        height: auto;
+        width: 90%;
+        /* flex-direction: column; */
+    }
+    #C-child-1{
+        width: 48%;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        height: 600px;
+    }
+    #C-child-1 input{
+        padding: 0;
+    }
+}
+@media (min-width:577px) and (max-width:768px) {
+    #navbarSupportedContent{
+        margin-left: 280px;
+        margin-top: 50px;
+    }
+    .navbar-nav{
+        text-align: center;
+        padding-right: 10px;
+    }
+    form i{
+        display: none;
+    }
+    #text p{
+        font-size: 25px;
+    }
+    #text h1{
+        font-size: 40px;
+    }
+    #text button{
+        padding: 8px 35px;
+    }
+    #csec1{
+        height: auto;
+    }
+    #cparent{
+        height: auto;
+        flex-direction: column;
+    }
+    #section-4{
+        height: auto;
+    }
+    #parent-4{
+        height: auto;
+    }
+    #child-4{
+        height: auto;
+    }
+    #c-chl-1{
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    #c-chl-1p5 button{
+        width: 100%;
+    } 
+    #c-chl-2{
+        border: 1px solid black;
+        width: 100%;
+        height: auto;
+    }
+    #c-chl-2a{
+        height: auto;
+        padding: 5px;
+    }
+    nav ul{
+        background-color: black;
+        border-radius: 20px;
+    }
+    footer{
+        height: auto;
+     }
+     #foot{
+         height: auto;
+     }
+     #section-2{
+        height: auto;
+    }
+    #parent-2{
+        height: auto;
+    }
+    #child-2a{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    #B-section-2{
+        height: auto;
+    }
+    #B-parent-2{
+        flex-direction: column;
+        height: auto;
+    }
+    #B-child-2a{
+        width: 100%;
+        height: auto;
+    }
+    #B-child-2a-2{
+        height: auto;
+    }
+    #B-child-2b{
+        width: 100%;
+        height: auto;
+    }
+    #B-peta-a img{
+        height: 80px;
+        width: 80px;
+    }
+    #A-section-2{
+        height: auto;
+    }
+    #A-parent-2{
+        height: auto;
+        flex-direction: column;
+    }
+    #A-section-2{
+        height: auto;
+    }
+    #A-parent-2{
+        height: auto;
+        flex-direction: column;
+    }
+    #A-child-2a{
+        width: 100%;
+    }
+    #A-child-2b{
+        width: 93.2%;
+    }
+    .img-margin{
+        margin-top: 50px;
+    }
+    .img-margin-top{
+        margin-top: 50px;
+    }
+    #A-child-2bp img{
+        height: 100%;
+        width: 101.5%;
+        margin-top: 1%;
+    }
+    #C-section-1{
+        height: auto;
+    }
+    #C-parent-1{
+        height: auto;
+        flex-direction: column;
+    }
+    #C-child-1{
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+}
+@media (min-width:0px) and (max-width:576px) {
+    #navbarSupportedContent{
+        margin-left: 180px;
+        margin-top: 50px;
+    }
+    .navbar-nav{
+        text-align: center;
+        padding-right: 10px;
+    }
+    form i{
+        display: none;
+    }
+    #text p{
+        font-size: 25px;
+    }
+    #text h1{
+        font-size: 40px;
+    }
+    #text button{
+        padding: 8px 35px;
+    }
+    #csec1{
+        height: auto;
+    }
+    #cparent{
+        height: auto;
+        flex-direction: column;
+    }
+    #c-chl-1{
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    #c-chl-1p5 button{
+        width: 100%;
+    }
+    #c-chl-2{
+        border: 1px solid black;
+        width: 100%;
+        height: auto;
+    }
+    #c-chl-2a{
+        height: auto;
+        padding: 5px;
+    }
+    nav ul{
+        background-color: black;
+        border-radius: 20px;
+    }
+    footer{
+       height: auto;
+    }
+    #foot{
+        height: auto;
+    }
+    #section-2{
+        height: auto;
+    }
+    #parent-2{
+        height: auto;
+    }
+    #child-2a{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    #section-4{
+        height: auto;
+    }
+    #parent-4{
+        height: auto;
+    }
+    #child-4{
+        height: auto;
+    }
+    #B-section-2{
+        height: auto;
+    }
+    #B-parent-2{
+        flex-direction: column;
+        height: auto;
+    }
+    #B-child-2a{
+        width: 100%;
+        height: auto;
+    }
+    #B-child-2a-2{
+        height: auto;
+    }
+    #B-child-2b{
+        width: 100%;
+        height: auto;
+    }
+    #B-peta-a img{
+        height: 60px;
+        width: 60px;
+    }
+    #A-section-2{
+        height: auto;
+    }
+    #A-parent-2{
+        height: auto;
+        flex-direction: column;
+    }
+    #A-child-2a{
+        width: 100%;
+    }
+    #A-child-2b{
+        width: 93.2%;
+    }
+    .img-margin{
+        margin-top: 200px;
+    }
+    .img-margin-top{
+        margin-top: 200px;
+    }
+    .img-margin-top{
+        margin-top: 50px;
+    }
+    #A-child-2bp img{
+        height: 100%;
+        width: 102.4%;
+        margin-top: 1.8%;
+    }
+    #C-section-1{
+        height: auto;
+    }
+    #C-parent-1{
+        height: auto;
+        flex-direction: column;
+    }
+    #C-child-1{
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+}
